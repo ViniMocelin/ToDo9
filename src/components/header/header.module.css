@@ -1,0 +1,97 @@
+.header {
+    width: 100%;
+    height: 400px;
+    background-color: #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 69px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoUm {
+    font-size: 20px;
+}
+
+.textoTres {
+    height: 48px;
+    font-size: 40px;
+    font-style: bold;
+}
+
+.textoDois {
+    margin: 24px 0 50px 0;
+    font-size: 14px;
+}
+
+.botoes {
+    width: 769px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    margin: 0 40px 0 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: transparent transparent transparent white;
+    border-style: solid;
+    height: 30%;
+    width: 100%;
+    border-width: 100px 0px 0px 100vw;
+}
+
+@media (max-width:426px) {
+    .header {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textoUm,
+    .textoDois,
+    .textoTres {
+        max-width: 359px;
+        margin-left: 0;
+    }
+
+    .botoes {
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 200;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 0 20px 20px 0;
+    }
+}
