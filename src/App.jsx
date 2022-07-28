@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import  Header from './components/header/header'
+import Form from './components/form/form'
+import Footer from './components/footer/footer'
 import './App.css'
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
     <div className="App">
       <p> oie </p>
       <Header />
+      <Form />
+      <Footer />
+      
     </div>
   )
 }
