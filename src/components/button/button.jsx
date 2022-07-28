@@ -1,11 +1,11 @@
 import React from 'react'
-import Style from './button.module.css'
+import s from './button.module.css'
 
-function Button(props) {
+const Button = ({texto}) => {
   return (
-    <button style={{backgroundColor: `${props.cor}`}}>{props.texto}</button>
-
-    
+    <button className={[s.button, s.buttonSlide].join(' ')}>
+      {texto}
+    </button>
   )
 }
 
